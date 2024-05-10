@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2 id="current-document-title">Document list</h2>
+<a href="/add_document" class="button" id="add-document-button">NEW</a>
+<ul class="document-list" id="documents-list"></ul>
+<h3 id="document-structure-title" style="display:none">Document structure</h3>
+<ul class="document-list" id="document-structure-list" style="display:none"></ul>
+<button id="edit-document-button" class="button" style="display:none; float: left">Update</button>
+<button id="save-document-button" class="button" style="display:none; float: right">Save</button>
+<form id="document-structure-form" style="display:none">
+    <ul class="document-list" id="document-structure-edit-list"></ul>
+    <button type="submit" class="button">Save</button>
+</form>
+{% endblock %}

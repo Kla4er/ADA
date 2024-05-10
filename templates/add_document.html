@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<form id="add-document-form">
+    <label for="document-type-select">Document type:</label>
+    <select id="document-type-select" name="document-type" required></select>
+
+    <label for="document-title">Title:</label>
+    <input id="document-title" name="document-title" type="text" required>
+
+    <label for="document-sts">Status:</label>
+    <input id="document-sts" name="document-sts" type="text" value="A">
+
+    <button type="submit">Create document</button>
+</form>
+{% endblock %}

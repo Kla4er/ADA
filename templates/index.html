@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2 id="current-type-title">Main document types:</h2>
+<a id="back-link" href="#" class="button" style="display: none;">Back</a>
+<ul class="document-list" id="types-list"></ul>
+<a class="button" id="add-type-button" href="{{ url_for('add_type') }}">NEW</a>
+{% endblock %}

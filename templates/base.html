@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="LV">
+<head>
+    <title>Adaptīvas datu apstrādes sistēmas</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='scripts.js') }}" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Adaptive System</h1>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="{{ url_for('index') }}">Structure settings</a></li>
+            <li><a href="{{ url_for('documents_page') }}">Document list</a></li>
+        </ul>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; Andrejs Sohins, 211RDB009</p>
+    </footer>
+</body>
+</html>

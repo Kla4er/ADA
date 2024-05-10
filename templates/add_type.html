@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Add new type</h2>
+<a id="add-back-link" href="#" class="button" style="display: block;">Back</a>
+<form id="add-type-form" class="form">
+    <label for="code">Code:</label>
+    <input type="text" id="code" name="code" required>
+
+    <label for="parent_code">Parent code:</label>
+    <input type="text" id="parent_code" name="parent_code" value="{{ request.args.get('parent_code') }}">
+
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="datatype">Datatype:</label>
+    <input type="text" id="datatype" name="datatype">
+
+    <label for="format">Format:</label>
+    <input type="text" id="format" name="format">
+
+    <button type="submit" class="button">Add</button>
+</form>
+{% endblock %}
